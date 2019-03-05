@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/temperature_value"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/timePickerPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:layout_alignParentTop="true"
+            android:headerBackground="@color/colorPrimary"
+            android:numbersSelectorColor="@color/colorPrimary"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonPanel"
+        android:layout_below="@id/timePickerPanel"
+        >
+        <TextView
+            android:id="@+id/soundLabel"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Alarm sound"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="20dp"
+            android:textSize="20sp"
+            android:background="@drawable/border"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/nunito_bold"
+            />
+        <ScrollView
+            android:id="@+id/selectSoundPanel"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_below="@id/soundLabel"
+            >
+
+            <RadioGroup
+                android:id="@+id/soundPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Happy"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="true"
+
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/border"
+                    android:fontFamily="@font/nunito_bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary"
+
+                    android:paddingLeft="20dp"
+                    android:text="Reality"
+                    android:background="@drawable/border"
+                    android:fontFamily="@font/nunito_bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="I'm A Mess"
+
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:background="@drawable/border"
+                    android:fontFamily="@font/nunito_bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="No Tears Left To Cry"
+
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:background="@drawable/border"
+                    android:fontFamily="@font/nunito_bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/option5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Connection"
+
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:background="@drawable/border"
+                    android:fontFamily="@font/nunito_bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/option6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Never Forget You"
+
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:background="@drawable/border"
+                    android:fontFamily="@font/nunito_bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/option7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Colour"
+
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:background="@drawable/border"
+                    android:fontFamily="@font/nunito_bold"
+                    />
+                <RadioButton
+                    android:id="@+id/option8"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Ciao Adios"
+
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/nunito_bold"
+                    android:background="@drawable/border"
+                    />
+
+                <RadioButton
+                    android:id="@+id/option9"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Born To Be Yours"
+
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/nunito_bold"
+                    android:background="@drawable/border"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/option10"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Un Año"
+
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/nunito_bold"
+                    />
+            </RadioGroup>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="#e6e6e6"
+            android:shadowColor="#fff"
+            android:text="Save"
+            android:fontFamily="@font/nunito_bold"
+            />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="#e6e6e6"
+
+            android:shadowColor="#fff"
+            android:text="Cancel"
+            android:fontFamily="@font/nunito_bold"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/temperature_value"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".MainActivity"
+android:background="#ffffff">
+
+<FrameLayout
+    android:id="@+id/now_alarm_layout"
+    android:layout_width="340dp"
+    android:layout_height="200dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:onClick="setAlarm"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/now_alarm_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Now Alarm"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tap_to_change_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="tap to change"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/nowAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="70sp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+    </RelativeLayout>
+</FrameLayout>
+
+<FrameLayout
+    android:id="@+id/temperature_layout"
+    android:layout_width="340dp"
+    android:layout_height="180dp"
+    android:paddingTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/now_alarm_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/temperature_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Temperature"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/temp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temperature_label"
+            android:layout_alignStart="@+id/temperature_label"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/temp_value"
+            android:layout_toEndOf="@+id/temp_value"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/celcius"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/humidiity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/temperature_label"
+            android:layout_below="@id/temp_value"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Humidity"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/humidity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/humidiity_label"
+            android:layout_alignStart="@+id/humidiity_label"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/humidity_value"
+            android:layout_toEndOf="@+id/humidity_value"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/percent"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</FrameLayout>
+
+
+</RelativeLayout>
